@@ -72,4 +72,46 @@ public interface DoublyLinkedListADT {
      * return 0, considering 0 as invalid data.
      */
     int removeGivenNode(int givenElement);
+
+    /**
+     * This method will return the data of the first node, if linked list is not empty.
+     * This is also known as headElement or firstElement
+     *
+     * @return will return data of the first node if linked list is not empty,
+     * otherwise it will return 0, considering 0 as invalid data.
+     */
+    int first();
+    /**
+     * This method will return the data of the last node, if linked list is not empty.
+     * This is also known as tailElement or lastElement.
+     * This method will use tail reference.
+     *
+     * @return will return data of the last node if linked list is not empty,
+     * otherwise it will return 0, considering 0 as invalid data.
+     */
+    int last();
+    /**
+     * This method will return the data of the last node, if linked list is not empty.
+     * This is also known as tailElement or lastElement.
+     * This method will not use tail reference.
+     * In this you have to traverse and identify the last node
+     *
+     * @return will return data of the last node if linked list is not empty,
+     * otherwise it will return 0, considering 0 as invalid data.
+     */
+    int lastWithoutUsingTail();
+
+    /**
+     * This method will check if linked list is empty or not.
+     *
+     * @return will return true is linked list is empty, otherwise false.
+     */
+    boolean isEmpty();
+
+    /**
+     * This method will return total number of nodes in given linked list.
+     *
+     * @return will return an integer value that is total number of nodes in linked list.
+     */
+    int size();
 }
