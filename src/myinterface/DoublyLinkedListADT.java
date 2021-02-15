@@ -114,4 +114,19 @@ public interface DoublyLinkedListADT {
      * @return will return an integer value that is total number of nodes in linked list.
      */
     int size();
+
+    /**
+     * This method will print data of each node in the linked list. if linked list is not empty,
+     * otherwise it will do nothing.
+     */
+    void traverse();
+
+    /**
+     * This method will check if the searchElement is present in the linked list.
+     * You have to traverse each node and compare data of node with the searchElement.
+     *
+     * @param searchElement is the element we have to search in the linked list
+     * @return it will return true if the searchElement is present in the list otherwise false
+     */
+    boolean search(int searchElement);
 }
